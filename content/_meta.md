@@ -1,6 +1,6 @@
 ---
-Logo: image/leaf_256x256.png
-Tagline: My portfolio.
+Logo: image/pf.png
+Tagline: Min portfölj.
 Social:
     - title: Link till sidans github repo.
       url: https://github.com/wtors/design
