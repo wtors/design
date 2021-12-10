@@ -1,0 +1,93 @@
+@import '../../node_modules/normalize.css/normalize';
+@import 'variables';
+
+@import 'blockquotes';
+@import 'code';
+
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color;
+    font-size: 20px;
+    position:relative;
+    overflow: auto;
+}
+
+* {
+    color: $font-color;
+}
+* {
+    font-family: 'Source Sans 3', sans-serif
+}
+.main {
+    margin: auto;
+    flex: 1 0 auto;
+    float: right;
+    width: 50%;
+}
+.main img {
+    float: left;
+    padding-right: 10px;
+}
+.header, .site-header {
+    display: flex;
+    justify-content: space-between;
+}
+.site-header {
+    padding-left: 2%;
+}
+.title, .logo {
+    padding: 3em 3em 3em 0;
+}
+.main p {
+    padding-bottom: 20%;
+}
+.footer {
+    background-color: rgb(121, 121, 121);
+    position: relative;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    border-top: 1px solid #222;
+}
+.footer {
+    a {
+        color: #222;
+    }
+    p {
+        margin-left: 1rem;
+    }
+    .social {
+        margin-top: -1rem;
+        padding-left: 1rem;
+        font-size: 2rem;
+        background-color: rgb(121, 121, 121);
+    } 
+}
+.header, .footer {
+    flex: 0 0 auto;
+}
+@media (max-width: 767px) {
+    .title, .logo {
+        padding: 1em 1em 1em 0;
+    }
+    .title {
+        min-width: 50%;
+    }
+    .logo {
+        max-width: 30%;
+        padding-right: 0;
+    }
+    .logo img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
